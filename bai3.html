@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+</body>
+</html>
+<script>
+    let input=prompt('insert paragraph');
+    let upper='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower='abcdefghijklmnopqrstuvwxyz';
+    let flag=false
+    let result=[];
+    for(x=0;x<=input.length;x++){
+        if(upper.indexOf(input[x]) !== -1){
+            result.push(input[x].toLowerCase());
+        }
+    else if(lower.indexOf(input[x]) !== -1){
+            result.push(input[x].toUpperCase());
+        }
+    else {
+      result.push(input[x]);
+    }
+  }
+console.log(result.join(''));
+
+    
+</script>
+for(y=0,z=0;y<=lower.length,z<=upper.length;y++,z++){
+    if(input[x]!==lower[y] && input[x]!==upper[z]){
+        reversed.push(input[x]);
+    }
+}   
+for(z=0;z<=upper.length;z++){
+    if(input[x]==upper[z]){
+        reversed.push(lower[z]);
+        break;
+    }
+}
+
+
+    
